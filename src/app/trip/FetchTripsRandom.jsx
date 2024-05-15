@@ -21,7 +21,7 @@ export default function FetchTripsRandom() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://127.0.0.1:8000/api/trips/');
+        const response = await fetch('https://simplondevgrenoble.nohost.me/feras/travelagency/public/api/trips');
         const data = await response.json();
         setTrips(data);
         setLoading(false); // Set loading to false after data is fetched
