@@ -1,0 +1,115 @@
+
+  
+  main {
+    padding: 30px;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  body {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.introImage{
+  width: 100%;
+}
+.introText{
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+  font-family: "Comic Sans MS", Chiller, Papyrus;
+  }
+  .intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+ 
+
+  /* loading  signal */
+  .loader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .loader {
+    width: 70px;
+    height: 70px;
+    position: relative;
+  }
+  
+  .loader:before {
+    content: "";
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 6px solid #007bff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: pulse 1s ease-in-out infinite;
+  }
+  
+  .loader:after {
+    content: "";
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-top-color: #007bff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: spin 2s linear infinite;
+  }
+  
+  .loader-text {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #007bff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.6);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(0.6);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .content {
+    display: none;
+  }
+  
+  .loaded .loader-container {
+    display: none;
+  }
+  
+  .loaded .content {
+    display: block;
+  }
+  
