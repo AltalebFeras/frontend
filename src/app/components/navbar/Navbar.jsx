@@ -23,7 +23,7 @@ function NavScrollExample() {
       <div >
         <Container fluid className="containerFluid">
           <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
+          <Navbar.Collapse id="navbarScroll">
             <Nav
               className="me-auto my-2 my-lg-0 NavLinks"
               style={{ maxHeight: "130px" }}
@@ -38,9 +38,9 @@ function NavScrollExample() {
               <Link className="btn btn-light" href="/contact">
                 Contact us
               </Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
       </div>
     </Navbar>
   );
