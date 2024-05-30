@@ -20,7 +20,7 @@ export default function FetchTrips() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://simplondevgrenoble.nohost.me/feras/travelagency/public/api/trips');
+        const response = await fetch('https://www.myprojects-simplon.online/api/trips');
         const data = await response.json();
         setTrips(data);
         setLoading(false); // Set loading to false after data is fetched
