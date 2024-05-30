@@ -75,7 +75,7 @@ export default function RegistrationForm({ tripId }) {
 
         // Submit data to API
         try {
-            const response = await fetch('https://simplondevgrenoble.nohost.me/feras/travelagency/public/api/reservation/new', {
+            const response = await fetch('https://www.myprojects-simplon.online/api/reservation/new', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
