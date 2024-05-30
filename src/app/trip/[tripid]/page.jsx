@@ -26,7 +26,7 @@ function TripDetail(props) {
     const fetchTrip = async () => {
       try {
         const response = await fetch(
-          "https://www.myprojects-simplon.online/api/trip/" + props.params.tripid
+          "https://simplondevgrenoble.nohost.me/feras/travelagency/public/api/trip/" + props.params.tripid
         );
         const data = await response.json();
         setTrip(data);
