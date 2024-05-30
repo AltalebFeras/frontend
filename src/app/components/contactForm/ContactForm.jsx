@@ -70,7 +70,7 @@ export default function ContactForm({ tripId }) {
 
         // Submit data to API
         try {
-            const response = await fetch('https://simplondevgrenoble.nohost.me/feras/travelagency/public/api/contact/new', {
+            const response = await fetch('https://www.myprojects-simplon.online/httpdocs/travelagency/public/api/contact/new', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
